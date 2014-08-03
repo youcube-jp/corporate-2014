@@ -75,5 +75,5 @@ activate :deploy do |deploy|
   deploy.method = :sftp
   deploy.host = 'louvre'
   deploy.port = 2222
-  deploy.path = '/web/youbube.jp'
+  deploy.path = '/web/youcube.jp'
 end
