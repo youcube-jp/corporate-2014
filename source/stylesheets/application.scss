@@ -8,7 +8,7 @@ html, body {
 #container {
   margin: 0 auto;
   max-width: 570px;
-  padding: 40px;
+  padding: 0 40px;
   position: relative;
   text-align: center;
   top: 50%;
@@ -19,6 +19,6 @@ html, body {
 }
 .img-responsive {
   display: block;
-  height: auto;
   max-width: 100%;
+  height: auto;
 }
