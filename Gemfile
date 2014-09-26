@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+# Middleman
 gem 'middleman'
 
 # Live-reloading plugin
@@ -14,5 +15,5 @@ gem 'font-awesome-sass', require: false
 # Javascript Runtime
 gem 'therubyracer'
 
-# Deploy
-gem 'middleman-deploy'
+# Debugger
+gem 'pry-byebug'
