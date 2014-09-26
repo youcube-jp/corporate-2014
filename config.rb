@@ -41,17 +41,49 @@
 # end
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  # active をつけるべきかどうか判断してつけるべきならつけたリンクを生成する
+  # @param [String] リンクラベル
+  # @param [String] リンク先
+  # @param [Hash] li に渡す属性
+  def activity_list(label, dest, attr = {})
+    if dest == current_page.url
+      if attr.has_key?(:class)
+        attr[:class] += ' active'
+      else
+        attr.merge!(class: 'active')
+      end
+    end
+
+    content_tag(:li, attr) do
+      link_to label, dest
+    end
+  end
+
+  # FontAwesome
+  def icon(icon, text="", html_options={})
+    content_class = "fa fa-#{icon}"
+    content_class << " #{html_options[:class]}" if html_options.key?(:class)
+    html_options[:class] = content_class
+    html = content_tag(:i, nil, html_options)
+    html << " #{text}" unless text.blank?
+    html.html_safe
+  end
+
+  # おしらせの YAML をハッシュに変換して返す
+  def announcements
+    YAML.load_file('resources/announcements.yml')
+  end
+end
 
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
+
+# きれいな URL
+activate :directory_indexes
 
 # Build-specific configuration
 configure :build do
@@ -69,11 +101,4 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
-end
-
-activate :deploy do |deploy|
-  deploy.method = :sftp
-  deploy.host = 'louvre'
-  deploy.port = 2222
-  deploy.path = '/web/youcube.jp'
 end

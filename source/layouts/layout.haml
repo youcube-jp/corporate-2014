@@ -3,12 +3,32 @@
   %head
     %meta{charset: 'utf-8'}
     %meta{name: 'viewport', content: 'initial-scale=1.0,user-scalable=no'}
-    %title ユーキューブ
+    %title 合同会社ユーキューブ
+    = javascript_include_tag 'https://code.jquery.com/jquery-2.1.1.min.js', 'application'
     = stylesheet_link_tag 'application'
-    = javascript_include_tag 'application'
     %link{rel: 'author', href: 'http://google.me/+YuNakanishi'}
     %link{rel: 'icon', type: 'image/png', href: image_path('favicon.png')}
     %link{rel: 'apple-touch-icon', type: 'image/png', href: image_path('apple-touch-icon.png')}
   %body
-    #container
+    .container
+      %header
+        %nav.navbar.navbar-default{role: 'navigation'}
+          .container-fluid
+            .navbar-header
+              %button.navbar-toggle.collapsed{type: 'button', data: {toggle: 'collapse', target: '#header-navbar-collapse'}}
+                %span.sr-only Toggle navigation
+                %span.icon-bar
+                %span.icon-bar
+                %span.icon-bar
+              = link_to(image_tag('title.png', alt: '合同会社ユーキューブ', width: 120, height: 30), '/', class: 'navbar-brand')
+            #header-navbar-collapse.collapse.navbar-collapse.navbar-right
+              %ul.nav.navbar-nav
+                = activity_list(icon('home', 'ホーム'), '/', class: 'hidden-xs hidden-sm')
+                = activity_list(icon('file-text-o', 'おしらせ'), '/announcements/')
+                = activity_list(icon('bullhorn', '企業理念'), '/mission/')
+                = activity_list(icon('building-o', '会社概要'), '/company/')
+                = activity_list(icon('comment-o', '代表あいさつ'), '/message/')
+                = activity_list(icon('envelope-o', 'お問い合わせ'), '/contact/')
       = yield
+      %footer
+        %p YouCube LLC.

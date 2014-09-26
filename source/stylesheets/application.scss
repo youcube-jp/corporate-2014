@@ -1,24 +1,92 @@
-* {
-  margin: 0;
-  padding: 0;
+// -------------------------------------------------------------------
+// Bootstrap Variables
+// -------------------------------------------------------------------
+$brand-primary: #4CB55B;
+
+$font-family-sans-serif:  'Lucida Grande', Verdana, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+
+// Basics of a navbar
+$navbar-collapse-max-height:       340px !default;
+
+$navbar-default-bg:                #ffffff;
+$navbar-default-border:            #ffffff;
+
+// Navbar links
+$navbar-default-link-color:                $brand-primary;
+$navbar-default-link-hover-color:          $brand-primary;
+$navbar-default-link-hover-bg:             darken(lighten($brand-primary, 100%), 5%);
+$navbar-default-link-active-color:         #ffffff;
+$navbar-default-link-active-bg:            $brand-primary;
+
+// Navbar toggle
+$navbar-default-toggle-hover-bg:           #ddd !default;
+$navbar-default-toggle-icon-bar-bg:        #888 !default;
+$navbar-default-toggle-border-color:       #ddd !default;
+
+// -------------------------------------------------------------------
+// Site Variables
+// -------------------------------------------------------------------
+$title-logo-height: 30px;
+
+// -------------------------------------------------------------------
+// Import Frameworks
+// -------------------------------------------------------------------
+@import "bootstrap-sprockets";
+@import 'bootstrap-custom';
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// -------------------------------------------------------------------
+// Override Bootstrap Styles
+// -------------------------------------------------------------------
+.navbar-brand {
+  $vertical-padding: ($navbar-height - $title-logo-height) / 2;
+  padding: $vertical-padding 15px $vertical-padding 0;
 }
-html, body {
-  height: 100%;
+
+.navbar-nav {
+  > li > a {
+    border-radius: $border-radius-base;
+
+    @media (max-width: $screen-sm-max) {
+      .fa {
+        display: none;
+      }
+    }
+  }
 }
-#container {
-  margin: 0 auto;
-  max-width: 570px;
-  padding: 0 40px;
-  position: relative;
+
+// -------------------------------------------------------------------
+// Site Core Styles
+// -------------------------------------------------------------------
+header {
+  margin-top: $line-height-computed;
+}
+footer {
   text-align: center;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
+
+  > p {
+    border-top: 1px dashed #999999;
+    margin: $line-height-computed 0;
+    padding-top: $line-height-computed;
+  }
 }
-.img-responsive {
-  display: block;
-  max-width: 100%;
-  height: auto;
+th {
+  text-align: center;
 }
+
+// -------------------------------------------------------------------
+// Page Styles
+// -------------------------------------------------------------------
+#index-page {
+  h2 {
+    background: #999999;
+    border-radius: $border-radius-base;
+    color: #ffffff;
+    float: left;
+    font-size: $font-size-base;
+    margin: 2px 4px 0 0;
+    padding: 0 4px;
+  }
+}
+
