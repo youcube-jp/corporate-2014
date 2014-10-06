@@ -1,7 +1,28 @@
 #index-page
   .row
     .col-xs-8.col-xs-offset-2.col-md-6.col-md-offset-3
-      %p= image_tag 'logo.png', alt: 'ユーキューブ', class: 'img-responsive'
+      %p#logo= image_tag 'logo.png', alt: 'ユーキューブ', class: 'img-responsive'
+  #services.row
+    .service.col-xs-12.col-sm-6.col-lg-3
+      %section.service
+        %h1 Web 開発承ります
+        %p Web サイトや Web アプリの開発をお考えのお客様、ご相談ください。
+        %p.actions
+          = link_to(icon('envelope', 'お問い合わせ'), '/contact/', class: 'btn btn-primary')
+    .service.col-xs-12.col-sm-6.col-lg-3
+      %section.service
+        %h1 WordPress 構築します
+        %p WordPress の導入をお考えのお客様へ、サーバ、セキュリティ、バックアップなどまとめて請け負います。
+        %p.actions
+          = link_to(icon('envelope', 'お問い合わせ'), '/contact/', class: 'btn btn-primary')
+    .service.col-xs-12.col-sm-6.col-lg-3
+      %section.service
+        %h1 プログラミング塾
+        %p 小学4年生～中学3年生までを対象としたプログラミング塾を2015年の夏に開講予定です。
+    .service.col-xs-12.col-sm-6.col-lg-3
+      %section.service
+        %h1 就活中の学生サポート
+        %p 就職活動中の大学生・大学院生を対象としたサービスを2014年中にオープン予定です。
   %p
     %span.label.label-default 最新のおしらせ
     = "#{announcements.last['date']}: #{announcements.last['text']}"

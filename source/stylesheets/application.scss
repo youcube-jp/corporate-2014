@@ -88,14 +88,28 @@ th {
 // Page Styles
 // -------------------------------------------------------------------
 #index-page {
-  h2 {
-    background: #999999;
-    border-radius: $border-radius-base;
-    color: #ffffff;
-    float: left;
-    font-size: $font-size-base;
-    margin: 2px 4px 0 0;
-    padding: 0 4px;
+  #logo {
+    margin-bottom: $line-height-computed;
+  }
+  #services {
+    margin-bottom: $line-height-computed;
+
+    section.service {
+      border: 1px solid #cccccc;
+      border-radius: $border-radius-base;
+      height: 160px;
+      padding: $line-height-computed / 2;
+      overflow: hidden;
+
+      h1 {
+        font-size: 20px;
+        margin-top: 0;
+      }
+
+      p.actions {
+        text-align: center;
+      }
+    }
   }
 }
 
