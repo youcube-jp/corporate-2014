@@ -1,5 +1,19 @@
 #contact-page
-  %h2 お問い合わせ
-  %p Web 開発のご相談、お問い合わせなどは下記までお気軽にどうぞ。
-  %p= link_to(icon('envelope-o', 'webmaster@youcube.jp'), '#', class: 'btn btn-default')
-  %p= link_to(icon('twitter', '@youcune'), '#', class: 'btn btn-default')
+  #page-title
+    %div= image_tag('hd-contact.jpg', class: 'img-responsive')
+    %h2 お問い合わせ
+  %p Web 開発のご相談、お問い合わせはお電話、電子メール、 Twitter でお受けしております。
+  .row
+    .col-xs-12.col-sm-4
+      %p.text-center= icon('phone', nil, class: 'fa-5x')
+      %p.text-center= link_to(icon('phone', '050-3136-6666'), 'tel:05031366666', class: 'btn btn-default')
+      %p お電話でのお問い合わせは24時間365日受付（とはいえひとり会社なので、出られなかった場合は折り返しご連絡させていただきます）。
+      %p.small * 不動産投資および各種保険には関心ございませんので連絡はご遠慮ください。お互い時間を有効に使いましょう。
+    .col-xs-12.col-sm-4
+      %p.text-center= icon('envelope-o', nil, class: 'fa-5x')
+      %p.text-center= link_to(icon('envelope-o', 'webmaster@youcube.jp'), 'mailto:webmaster@youcube.jp', class: 'btn btn-default')
+      %p 電子メールでお問い合わせいただければ、24時間以内に必ずお返事いたします。
+    .col-xs-12.col-sm-4
+      %p.text-center= icon('twitter', nil, class: 'fa-5x')
+      %p.text-center= link_to(icon('twitter', '@youcune'), 'https://twitter.com/youcune', class: 'btn btn-default')
+      %p カジュアルな内容であれば Twitter で気軽に声をかけてください。

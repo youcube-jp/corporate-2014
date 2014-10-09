@@ -83,6 +83,21 @@ footer {
 th {
   text-align: center;
 }
+#page-title {
+  margin-bottom: $line-height-computed;
+  position: relative;
+
+  h2 {
+    background: #000000;
+    bottom: 0;
+    color: #ffffff;
+    left: 0;
+    margin: 0;
+    opacity: 0.75;
+    padding: $line-height-computed/2;
+    position: absolute;
+  }
+}
 
 // -------------------------------------------------------------------
 // Page Styles

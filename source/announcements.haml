@@ -1,5 +1,7 @@
 #announcements-page
-  %h2 おしらせ
+  #page-title
+    %div= image_tag('hd-announcements.jpg', class: 'img-responsive')
+    %h2 おしらせ
   %ul
     - announcements.each do |announce|
       %li #{announce['date']}: #{announce['text']}
