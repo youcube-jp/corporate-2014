@@ -15,15 +15,15 @@ $title-logo-height: 45px;
 // Site Core Styles
 // -------------------------------------------------------------------
 header {
-  margin-top: $line-height-computed;
+  margin-top: $line-height-computed / 2;
 }
 footer {
   text-align: center;
 
   > p {
     border-top: 1px dashed #999999;
-    margin: $line-height-computed 0;
-    padding-top: $line-height-computed;
+    margin: $line-height-computed / 2 0;
+    padding-top: $line-height-computed / 2;
   }
 }
 th {
@@ -61,7 +61,7 @@ th {
     margin-bottom: $line-height-computed;
   }
   #services {
-    margin-bottom: $line-height-computed;
+    margin-bottom: $line-height-computed * (3 / 8);
 
     section.service {
       border: 1px solid #cccccc;
