@@ -1,0 +1,47 @@
+#wordpress-page
+  #page-title
+    %div= image_tag('hd-wordpress.jpg', class: 'img-responsive')
+    %h2 おまかせ WordPress
+  %p.lead IT 部門を持たない中小企業をご経営のお客様、ユーキューブに Web を活用するお手伝いをさせてください。
+  %h3 3つの悩みから解放します
+  %p ユーキューブに運用をおまかせいただくと、お客様は下記3つの悩みから解放されます。
+  .row
+    .col-xs-12.col-md-4
+      %h4.text-center サーバー
+      %p.text-center= icon('plug', nil, class: 'fa-5x', style: 'color: #999999;')
+      %p 一般的にサーバーはお客様で手配していただくサービスが多いですが、ユーキューブならサーバーの選定、契約、各種設定などすべて代行いたします。
+    .col-xs-12.col-md-4
+      %h4.text-center バックアップ
+      %p.text-center= icon('cloud-upload', nil, class: 'fa-5x', style: 'color: #3399ff;')
+      %p 毎日、毎週、毎月、お客様の大切なデータをバックアップいたします。万一のことがあっても被害を最小限にできます。
+    .col-xs-12.col-md-4
+      %h4.text-center セキュリティ
+      %p.text-center= icon('shield', nil, class: 'fa-5x', style: 'color: #ff9900;')
+      %p WordPress にセキュリティ問題が発見された場合、バージョンアップを弊社で実施いたします。また、サイトが攻撃を受けていないか24時間365日監視し、不審なアクセスを遮断します。
+  %h3 売上向上のお手伝いをいたします
+  %p さらにユーキューブなら、作って動けば終わりではありません。 Web 制作のノウハウを活かし、売上向上までお手伝いいたします。
+  .row
+    .col-xs-12.col-md-4
+      %h4.text-center 独自ドメイン
+      %p.text-center= icon('globe', nil, class: 'fa-5x', style: 'color: #0000ff;')
+      %p your-business.com のような覚えやすい独自ドメインの取得、設定まで代行いたします。
+    .col-xs-12.col-md-4
+      %h4.text-center アクセス解析
+      %p.text-center= icon('bar-chart', nil, class: 'fa-5x', style: 'color: #009900;')
+      %p Google Analytics を導入し、お客様のサイトにどこからどれだけの集客があったかを分析できる仕組みをご用意いたします。
+    .col-xs-12.col-md-4
+      %h4.text-center 運用サポート
+      %p.text-center= icon('envelope-o', nil, class: 'fa-5x', style: 'color: #3399ff;')
+      %p お客様のサイトの状況を随時確認し、集客効果改善のアドバイス、簡単な改修を行います。
+      %p.small * 無料で対応可能な作業時間は月に1時間が目安です。この時間を超える作業をご希望の場合は別途お見積もりとさせていただきます。
+  %h3 価格
+  %p 現在は開業間もないため、制作実績としてサイトでご紹介させていただくことを条件に、年額200,000円からご提案させていただいております。
+  .row
+    .col-xs-12.col-md-8.col-md-offset-2
+      .panel.panel-primary
+        .panel-heading
+          %h3.panel-title 今すぐ問い合わせる
+        .panel-body
+          %p お問い合せは電子メールで承っております。どのようなサイトを構築したいかをヒアリングさせていただき、ご提案させていただきます。
+          %p.text-center= link_to(icon('envelope-o', 'you@youcube.jp'), 'mailto:you@youcube.jp', class: 'btn btn-primary')
+          %p.small= link_to 'お電話、 Twitter でも承っております', '/contact/'

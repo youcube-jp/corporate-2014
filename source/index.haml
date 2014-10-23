@@ -7,14 +7,12 @@
       %section.service
         %h1 Web 開発承ります
         %p Web サイトや Web アプリの開発をお考えのお客様、ご相談ください。
-        %p.actions
-          = link_to(icon('question-circle', 'お問い合わせ'), '/contact/', class: 'btn btn-primary')
     .service.col-xs-12.col-sm-6.col-lg-3
       %section.service
         %h1 WordPress 構築します
-        %p WordPress の導入をお考えのお客様へ、サーバ、セキュリティ、バックアップなどまとめて請け負います。
+        %p WordPress の導入をお考えのお客様へ、ユーキューブにお手伝いさせてください。
         %p.actions
-          = link_to(icon('question-circle', 'お問い合わせ'), '/contact/', class: 'btn btn-primary')
+          = link_to(icon('hand-o-right', '詳しく見る'), '/wordpress/', class: 'btn btn-primary')
     .service.col-xs-12.col-sm-6.col-lg-3
       %section.service
         %h1 プログラミング塾
@@ -25,4 +23,4 @@
         %p 就職活動中の大学生・大学院生を対象とした Web サービスを2014年中にオープン予定です。
   %p
     %span.label.label-default 最新のおしらせ
-    = "#{announcements.last['date']}: #{announcements.last['text']}"
+    = "#{announcements.last['date']}：#{announcements.last['text']}"
