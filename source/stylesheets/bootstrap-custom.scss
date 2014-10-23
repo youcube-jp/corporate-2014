@@ -83,6 +83,7 @@ $navbar-default-toggle-border-color:       #ddd !default;
 // Override Styles
 // -------------------------------------------------------------------
 .navbar-brand {
+  $title-logo-height: 45px;
   $vertical-padding: ($navbar-height - $title-logo-height) / 2;
   padding: $vertical-padding 15px $vertical-padding 0;
 }
