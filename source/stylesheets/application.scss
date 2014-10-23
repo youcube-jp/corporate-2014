@@ -1,29 +1,4 @@
 // -------------------------------------------------------------------
-// Bootstrap Variables
-// -------------------------------------------------------------------
-$brand-primary: #4CB55B;
-
-$font-family-sans-serif:  'Lucida Grande', Verdana, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
-
-// Basics of a navbar
-$navbar-collapse-max-height:       340px !default;
-
-$navbar-default-bg:                #ffffff;
-$navbar-default-border:            #ffffff;
-
-// Navbar links
-$navbar-default-link-color:                $brand-primary;
-$navbar-default-link-hover-color:          $brand-primary;
-$navbar-default-link-hover-bg:             darken(lighten($brand-primary, 100%), 5%);
-$navbar-default-link-active-color:         #ffffff;
-$navbar-default-link-active-bg:            $brand-primary;
-
-// Navbar toggle
-$navbar-default-toggle-hover-bg:           #ddd !default;
-$navbar-default-toggle-icon-bar-bg:        #888 !default;
-$navbar-default-toggle-border-color:       #ddd !default;
-
-// -------------------------------------------------------------------
 // Site Variables
 // -------------------------------------------------------------------
 $title-logo-height: 45px;
@@ -35,35 +10,6 @@ $title-logo-height: 45px;
 @import 'bootstrap-custom';
 @import "font-awesome-sprockets";
 @import "font-awesome";
-
-// -------------------------------------------------------------------
-// Override Bootstrap Styles
-// -------------------------------------------------------------------
-.navbar-brand {
-  $vertical-padding: ($navbar-height - $title-logo-height) / 2;
-  padding: $vertical-padding 15px $vertical-padding 0;
-}
-
-.navbar-nav {
-  > li > a {
-    @media (min-width: $screen-sm-min) {
-      border-radius: $border-radius-base;
-    }
-
-    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-      padding: 15px 10px;
-
-      > .fa {
-        display: none;
-      }
-    }
-  }
-
-  @media (max-width: $screen-xs-max) {
-    border: 1px solid lighten($brand-primary, 25%);
-    border-radius: $border-radius-base;
-  }
-}
 
 // -------------------------------------------------------------------
 // Site Core Styles
