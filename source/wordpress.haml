@@ -1,6 +1,6 @@
 #wordpress-page
   #page-title
-    %div= image_tag('hd-wordpress.jpg', class: 'img-responsive')
+    %div= image_tag('hd-wordpress.jpg', class: 'img-responsive img-rounded')
     %h2 おまかせ WordPress
   %p.lead IT 部門を持たない中小企業をご経営のお客様、ユーキューブに Web を活用するお手伝いをさせてください。
   %h3 3つの悩みから解放します
@@ -10,6 +10,7 @@
       %h4.text-center サーバー
       %p.text-center= icon('plug', nil, class: 'fa-5x', style: 'color: #999999;')
       %p 一般的にサーバーはお客様で手配していただくサービスが多いですが、ユーキューブならサーバーの選定、契約、各種設定などすべて代行いたします。
+      %p.small * アクセス数が極端に多い場合など、想定している価格でサーバーが手配できない場合、価格についてご相談させていただく場合がございます。
     .col-xs-12.col-md-4
       %h4.text-center バックアップ
       %p.text-center= icon('cloud-upload', nil, class: 'fa-5x', style: 'color: #3399ff;')
@@ -19,7 +20,7 @@
       %p.text-center= icon('shield', nil, class: 'fa-5x', style: 'color: #ff9900;')
       %p WordPress にセキュリティ問題が発見された場合、バージョンアップを弊社で実施いたします。また、サイトが攻撃を受けていないか24時間365日監視し、不審なアクセスを遮断します。
   %h3 売上向上のお手伝いをいたします
-  %p さらにユーキューブなら、作って動けば終わりではありません。 Web 制作のノウハウを活かし、売上向上までお手伝いいたします。
+  %p さらにユーキューブなら、作って動けば終わりではありません。 Web マーケティングのノウハウを活かし、売上向上までお手伝いいたします。
   .row
     .col-xs-12.col-md-4
       %h4.text-center 独自ドメイン
@@ -35,7 +36,22 @@
       %p お客様のサイトの状況を随時確認し、集客効果改善のアドバイス、簡単な改修を行います。
       %p.small * 無料で対応可能な作業時間は月に1時間が目安です。この時間を超える作業をご希望の場合は別途お見積もりとさせていただきます。
   %h3 価格
-  %p 現在は開業間もないため、制作実績としてサイトでご紹介させていただくことを条件に、年額200,000円からご提案させていただいております。
+  %h4 すでに外部の制作会社等で制作されたサイトをお持ちのお客様
+  %ul
+    %li
+      移転作業等の初期費用 <strong class="pricing">¥0～</strong>
+      %ul.list-unstyled.small
+        %li * 基本無料ですが、構成や規模によっては料金がかかる場合がございます。詳しくはお問い合わせください。
+    %li 運用費用 <strong class="pricing">¥300,000/年</strong> (毎月払いの場合 ¥30,000/月)
+  %h4 ユーキューブに制作を依頼いただくお客様
+  %ul
+    %li
+      制作を含めた初期費用 <strong class="pricing">¥0～</strong>
+      %ul.list-unstyled.small
+        %li * 2年の継続利用をお約束いただいた場合の価格です。2年未満のご解約の場合は、 ¥15,000 × (24ヶ月に満たない月数) の金額を申し受けます。
+        %li * コンピュータ、タブレット、スマートフォンのどれで見ても綺麗に見れるテンプレート利用を前提とした価格です。
+        %li * 基本無料ですが、構成、規模、機能、お客様のご希望によっては料金がかかる場合がございます。詳しくはお問い合わせください。
+    %li 運用費用 <strong class="pricing">¥300,000/年</strong> (毎月払いの場合 ¥30,000/月)
   .row
     .col-xs-12.col-md-8.col-md-offset-2
       .panel.panel-primary

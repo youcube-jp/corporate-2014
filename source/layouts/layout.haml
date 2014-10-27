@@ -13,22 +13,21 @@
     .container
       %header
         %nav.navbar.navbar-default{role: 'navigation'}
-          .container-fluid
-            .navbar-header
-              %button.navbar-toggle.collapsed{type: 'button', data: {toggle: 'collapse', target: '#header-navbar-collapse'}}
-                %span.sr-only Toggle navigation
-                %span.icon-bar
-                %span.icon-bar
-                %span.icon-bar
-              = link_to(image_tag('title.png', alt: '合同会社ユーキューブ', width: 180, height: 45), '/', class: 'navbar-brand')
-            #header-navbar-collapse.collapse.navbar-collapse.navbar-right
-              %ul.nav.navbar-nav
-                = activity_list(icon('home', 'ホーム'), '/', class: 'hidden-sm')
-                = activity_list(icon('file-text-o', 'おしらせ'), '/announcements/')
-                = activity_list(icon('bullhorn', '企業理念'), '/mission/')
-                = activity_list(icon('building-o', '会社概要'), '/company/')
-                = activity_list(icon('comment-o', '代表挨拶'), '/message/')
-                = activity_list(icon('question-circle', 'お問い合わせ'), '/contact/')
+          .navbar-header
+            %button.navbar-toggle.collapsed{type: 'button', data: {toggle: 'collapse', target: '#header-navbar-collapse'}}
+              %span.sr-only Toggle navigation
+              %span.icon-bar
+              %span.icon-bar
+              %span.icon-bar
+            = link_to(image_tag('title.png', alt: '合同会社ユーキューブ', width: 180, height: 45), '/', class: 'navbar-brand')
+          #header-navbar-collapse.collapse.navbar-collapse.navbar-right
+            %ul.nav.navbar-nav
+              = activity_list(icon('home', 'ホーム'), '/', class: 'hidden-sm')
+              = activity_list(icon('file-text-o', 'おしらせ'), '/announcements/')
+              = activity_list(icon('bullhorn', '企業理念'), '/mission/')
+              = activity_list(icon('building-o', '会社概要'), '/company/')
+              = activity_list(icon('comment-o', '代表挨拶'), '/message/')
+              = activity_list(icon('question-circle', 'お問い合わせ'), '/contact/')
       = yield
       %footer
         %p YouCube LLC.

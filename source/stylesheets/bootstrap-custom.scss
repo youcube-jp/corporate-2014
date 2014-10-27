@@ -9,9 +9,9 @@ $font-family-monospace: Menlo, 'Courier New', 'Hiragino Kaku Gothic ProN', monos
 
 // Basics of a navbar
 $navbar-collapse-max-height:       340px !default;
-
 $navbar-default-bg:                #ffffff;
 $navbar-default-border:            #ffffff;
+$navbar-padding-horizontal:        0;
 
 // Navbar links
 $navbar-default-link-color:                $brand-primary;
