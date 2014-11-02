@@ -60,23 +60,23 @@
         %form#inquiry-form.panel-body{method: 'POST', action: 'https://youcube.jp/api/1/inquiries'}
           %p お問い合わせいただければ、24時間以内に折り返しご連絡いたします。
           .row.form-group
-            %label.control-label.col-xs-12.col-md-3{for: 'name-input'} お名前
-            .col-xs-12.col-md-9
+            %label.control-label.col-xs-12.col-md-4{for: 'name-input'} お名前 <span class="label label-danger">必須</span>
+            .col-xs-12.col-md-8
               %input#name-input.form-control{type: 'text', name: 'name'}
               #name-error.error
           .row.form-group
-            %label.control-label.col-xs-12.col-md-3{for: 'email-input'} Eメールアドレス
-            .col-xs-12.col-md-9
+            %label.control-label.col-xs-12.col-md-4{for: 'email-input'} Eメールアドレス
+            .col-xs-12.col-md-8
               %input#email-input.form-control{type: 'email', name: 'email'}
               #email-error.error
           .row.form-group
-            %label.control-label.col-xs-12.col-md-3{for: 'phone-input'} お電話番号
-            .col-xs-12.col-md-9
+            %label.control-label.col-xs-12.col-md-4{for: 'phone-input'} お電話番号
+            .col-xs-12.col-md-8
               %input#phone-input.form-control{type: 'tel', name: 'phone'}
               #phone-error.error
           .row.form-group
-            %label.control-label.col-xs-12.col-md-3{for: 'message-input'} お問い合わせ内容
-            .col-xs-12.col-md-9
+            %label.control-label.col-xs-12.col-md-4{for: 'message-input'} お問い合わせ内容 <span class="label label-danger">必須</span>
+            .col-xs-12.col-md-8
               %textarea#message-input.form-control{name: 'message', placeholder: '案件の内容、希望納期、ご予算などお書きいただければスムーズです。'}
               #message-error.error
           .form-group.text-center
