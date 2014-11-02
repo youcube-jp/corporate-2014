@@ -111,7 +111,7 @@ textarea.form-control {
   border-radius: $border-radius-base;
   color: $label-color;
   display: none;
-  padding: $line-height-computed/4;
+  padding: $line-height-computed/4 $line-height-computed/2;
 }
 
 // -------------------------------------------------------------------
