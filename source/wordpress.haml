@@ -57,7 +57,7 @@
       .panel.panel-primary
         .panel-heading
           %h3.panel-title 30秒で完了！　今すぐ問い合わせる
-        %form#inquiry-form.panel-body{method: 'POST', action: 'http://localhost:3000/api/1/inquiries'}
+        %form#inquiry-form.panel-body{method: 'POST', action: '/api/1/inquiries'}
           .row.form-group
             %label.control-label.col-xs-12.col-lg-4{for: 'name-input'} お名前 <span class="label label-danger">必須</span>
             .col-xs-12.col-lg-8
