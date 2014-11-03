@@ -55,24 +55,19 @@ th {
   #logo {
     margin-bottom: $line-height-computed;
   }
-  #services {
-    margin-bottom: $line-height-computed * (3 / 8);
+}
+#works-page {
+  .service {
+    &#days {
+      background: #ffffff image-url('sv-yurie.jpg') no-repeat right 4px scroll;
+      background-size: 128px 177px;
+      padding-right: 128px;
+    }
 
-    section.service {
-      border: 1px solid #cccccc;
-      border-radius: $border-radius-base;
-      height: 160px;
-      padding: $line-height-computed / 2;
-      overflow: hidden;
-
-      h1 {
-        font-size: 20px;
-        margin-top: 0;
-      }
-
-      p.actions {
-        text-align: center;
-      }
+    &#onepad{
+      background: #ffffff image-url('sv-onepad.png') no-repeat top left scroll;
+      background-size: 293px 176px;
+      padding: 52px 0 0 16px;
     }
   }
 }
@@ -80,6 +75,27 @@ th {
 // -------------------------------------------------------------------
 // Common Styles
 // -------------------------------------------------------------------
+.services {
+  margin-bottom: $line-height-computed * (3 / 8);
+
+  section.service {
+    border: 1px solid #cccccc;
+    border-radius: $border-radius-base;
+    height: 160px;
+    padding: $line-height-computed / 2;
+    overflow: hidden;
+
+    h1 {
+      font-size: 20px;
+      margin-top: 0;
+    }
+
+    p.actions {
+      text-align: center;
+    }
+  }
+}
+
 strong.pricing {
   color: $brand-primary;
   font-size: 150%;
