@@ -1,7 +1,7 @@
 #index-page
   .row
     .col-xs-8.col-xs-offset-2.col-md-6.col-md-offset-3
-      %p#logo= image_tag 'logo.png', alt: 'ユーキューブ', class: 'img-responsive'
+      %p#logo= link_to(image_tag('logo.png', alt: 'ユーキューブ', class: 'img-responsive'), '/works/')
   %p
     %span.label.label-default 最新のおしらせ
     = "#{announcements.last['date']}：#{announcements.last['text']}"
