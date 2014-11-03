@@ -3,7 +3,7 @@
   %head
     %meta{charset: 'utf-8'}
     %meta{name: 'viewport', content: 'initial-scale=1.0,user-scalable=no'}
-    %title 合同会社ユーキューブ
+    %title= current_page.data.title.try{ |_| "#{_} | 合同会社ユーキューブ" } || '合同会社ユーキューブ'
     = javascript_include_tag 'dependencies', 'application'
     = stylesheet_link_tag 'application'
     %link{rel: 'author', href: 'http://google.me/+YuNakanishi'}
@@ -26,7 +26,7 @@
               = activity_list(icon('cubes', '制作実績'), '/works/')
               = activity_list(icon('file-text-o', 'おしらせ'), '/announcements/')
               = activity_list(icon('building-o', '会社概要'), '/company/')
-              = activity_list(icon('bullhorn', '代表挨拶'), '/mission/')
+              = activity_list(icon('bullhorn', '代表挨拶'), '/message/')
               = activity_list(icon('question-circle', 'お問い合わせ'), '/contact/')
       = yield
       %footer
