@@ -57,39 +57,4 @@ title: WordPressの保守・運用
     %li 運用費用 <strong class="pricing">¥300,000/年</strong> (毎月払いの場合 ¥30,000/月)
   .row
     .col-xs-12.col-md-8.col-md-offset-2
-      .panel.panel-primary
-        .panel-heading
-          %h3.panel-title 1分で完了！　今すぐ問い合わせる
-        %form#inquiry-form.panel-body{method: 'POST', action: 'https://youcube.jp/api/1/inquiries'}
-          %p お問い合わせいただければ、24時間以内に折り返しご連絡いたします。
-          .row.form-group
-            %label.control-label.col-xs-12.col-md-4{for: 'name-input'} お名前 <span class="label label-danger">必須</span>
-            .col-xs-12.col-md-8
-              %input#name-input.form-control{type: 'text', name: 'name'}
-              #name-error.error
-          .row.form-group
-            %label.control-label.col-xs-12.col-md-4{for: 'email-input'} Eメールアドレス
-            .col-xs-12.col-md-8
-              %input#email-input.form-control{type: 'email', name: 'email'}
-              #email-error.error
-          .row.form-group
-            %label.control-label.col-xs-12.col-md-4{for: 'phone-input'} お電話番号
-            .col-xs-12.col-md-8
-              %input#phone-input.form-control{type: 'tel', name: 'phone'}
-              #phone-error.error
-          .row.form-group
-            %label.control-label.col-xs-12.col-md-4{for: 'message-input'} お問い合わせ内容 <span class="label label-danger">必須</span>
-            .col-xs-12.col-md-8
-              %textarea#message-input.form-control{name: 'message', placeholder: '案件の内容、希望納期、ご予算などお書きいただければスムーズです。'}
-              #message-error.error
-          .form-group.text-center
-            %button#inquiry-submit.btn.btn-primary= icon('send', '送信する')
-          %p.clearfix.media
-            = image_tag('rapidssl_seal.gif', class: 'pull-left')
-            お客様の個人情報は SSL で暗号化され、安全に送信されます。
-          .small
-            お問い合わせいただければこちらから折り返しご連絡させていただきます。24時間経ってもこちらから連絡が届かない場合、お手数ですが
-            = link_to(icon('envelope', 'you@youcube.jp'), 'mailto:you@youcube.jp')
-            までご連絡ください。また、
-            = link_to 'お電話、 Twitter でもお問い合わせを承っております', '/contact/'
-            。
+      = partial 'partials/inquiry_form'

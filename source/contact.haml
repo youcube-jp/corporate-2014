@@ -5,7 +5,11 @@ title: お問い合わせ
   #page-title
     %div= image_tag('hd-contact.jpg', class: 'img-responsive img-rounded')
     %h2 お問い合わせ
-  %p Web 開発のご相談、お問い合わせはお電話、電子メール、 Twitter でお受けしております。
+  %p Web 開発・運用についてのお問い合わせは下記フォームからお気軽にどうぞ。
+  .row
+    .col-xs-12.col-md-8.col-md-offset-2
+      = partial 'partials/inquiry_form'
+  %p#contact-directly または、お電話、電子メール、 Twitter でもお受けしております。
   .row
     .col-xs-12.col-sm-4
       %p.text-center= icon('phone', nil, class: 'fa-5x', style: 'color: #009900;')
