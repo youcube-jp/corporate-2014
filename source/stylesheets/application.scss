@@ -13,13 +13,10 @@ header {
   margin-top: $line-height-computed / 2;
 }
 footer {
+  border-top: 1px dashed #999999;
+  margin: $line-height-computed / 2 0;
+  padding-top: $line-height-computed / 2;
   text-align: center;
-
-  > p {
-    border-top: 1px dashed #999999;
-    margin: $line-height-computed / 2 0;
-    padding-top: $line-height-computed / 2;
-  }
 }
 th {
   text-align: center;

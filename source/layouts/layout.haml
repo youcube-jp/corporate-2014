@@ -25,9 +25,12 @@
               = activity_list(icon('home', 'ホーム'), '/', class: 'hidden-sm')
               = activity_list(icon('cubes', '事業内容'), '/works/')
               = activity_list(icon('file-text-o', 'おしらせ'), '/announcements/')
-              = activity_list(icon('building-o', '会社概要'), '/company/')
               = activity_list(icon('bullhorn', '代表挨拶'), '/message/')
               = activity_list(icon('question-circle', 'お問い合わせ'), '/contact/')
       = yield
       %footer
-        %p YouCube LLC.
+        %div YouCube LLC.
+        %div
+          = link_to '会社概要', '/company/'
+          = '-'
+          = link_to 'プライバシーポリシー', '/privacy/'
