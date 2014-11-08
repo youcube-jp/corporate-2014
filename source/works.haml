@@ -12,6 +12,13 @@ title: 事業内容・制作実績
         %h1 おまかせ WordPress
         %p WordPress の保守・運用をお客様に代わって引き受けます。
         %p.text-center= link_to(icon('hand-o-right', '詳しく見る'), '/wordpress/', class: 'btn btn-primary')
+  %h3 制作実績
+  .services.row.container-fluid.little-gutter
+    .col-xs-12.col-sm-6.col-lg-3
+      %section.service#yo-counter
+        %h1 YoCounter
+        %p can generate YoCounter buttons for your own websites. <a href="http://justyo.co/h/ILOVEYO" class="yo-counter" data-hashtag="ILOVEYO">#ILOVEYO</a>
+        %p.text-center= link_to(icon('rocket', 'Get started'), 'http://yasetter.com/?utm_source=portal&utm_medium=portal&utm_content=card', class: 'btn')
   %h3 運用メディア
   .services.row.container-fluid.little-gutter
     .col-xs-12.col-sm-6.col-lg-3
@@ -38,3 +45,4 @@ title: 事業内容・制作実績
         %h1.hide OnePad<sup>2</sup>
         %p は、登録不要でコンピュータ/スマートフォン対応、1ページだけのオンラインメモ帳 Web サービスです。
         %p.text-center= link_to(icon('rocket', 'はじめる'), 'http://onepad.anone.me/?utm_source=portal&utm_medium=portal&utm_content=card', class: 'btn btn-primary')
+= javascript_include_tag 'http://counter.justyo.co/api/1/buttons.js'
