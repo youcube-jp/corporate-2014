@@ -85,6 +85,9 @@ set :images_dir, 'images'
 # きれいな URL
 activate :directory_indexes
 
+# サイトマップは layout しない
+page '/sitemap.xml', layout: false
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
