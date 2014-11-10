@@ -3,6 +3,7 @@
   %head
     %meta{charset: 'utf-8'}
     %meta{name: 'viewport', content: 'initial-scale=1.0,user-scalable=no'}
+    %meta{name: 'description', content: current_page.data.description || '兵庫県三田市のWeb制作会社、合同会社ユーキューブのWebサイトです。'}
     %title= current_page.data.title.try{ |_| "#{_} | 合同会社ユーキューブ" } || '兵庫県三田市のWeb制作会社、合同会社ユーキューブ'
     = javascript_include_tag 'dependencies', 'application'
     = stylesheet_link_tag 'application'
