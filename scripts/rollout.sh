@@ -13,3 +13,5 @@ git merge --ff origin/$BRANCH
 
 bundle install
 bundle exec middleman build
+
+curl 'http://www.google.com/webmasters/sitemaps/ping?sitemap=https%3A%2F%2Fyoucube.jp%2Fsitemap.xml'
