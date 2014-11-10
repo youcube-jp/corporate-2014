@@ -11,4 +11,5 @@ git fetch
 git checkout $BRANCH
 git merge --ff origin/$BRANCH
 
+bundle install
 bundle exec middleman build
