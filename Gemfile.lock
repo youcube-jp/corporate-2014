@@ -9,6 +9,7 @@ GEM
       tzinfo (~> 1.1)
     bootstrap-sass (3.3.0.1)
       sass (~> 3.2)
+    builder (3.2.2)
     byebug (3.5.1)
       columnize (~> 0.8)
       debugger-linecache (~> 1.2)
@@ -148,6 +149,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap-sass
+  builder
   font-awesome-sass
   middleman
   middleman-livereload
