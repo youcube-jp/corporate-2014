@@ -74,6 +74,11 @@ helpers do
   def announcements
     YAML.load_file('resources/announcements.yml')
   end
+
+  # image_url を返す
+  def image_url(source)
+    'https://youcube.jp' + image_path(source)
+  end
 end
 
 set :css_dir, 'stylesheets'
