@@ -128,10 +128,6 @@ textarea.form-control {
     @media (min-width: $screen-sm-min) {
       border-radius: $border-radius-base;
     }
-
-    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-      padding: 15px 10px;
-    }
   }
 
   @media (max-width: $screen-xs-max) {
