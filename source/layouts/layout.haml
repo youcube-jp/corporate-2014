@@ -9,6 +9,7 @@
     %meta{property: 'og:url', content: "https://youcube.jp#{current_page.url}"}
     %meta{property: 'og:type', content: 'website'}
     %meta{property: 'og:image', content: image_url('icon180.png')}
+    %meta{property: 'og:locale', content: 'ja_JP'}
     %title= current_page.data.title.try{ |_| "#{_} | 合同会社ユーキューブ" } || '兵庫県三田市のWeb制作会社、合同会社ユーキューブ'
     = javascript_include_tag 'dependencies', 'application'
     = stylesheet_link_tag 'application'
