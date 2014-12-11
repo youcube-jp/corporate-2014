@@ -29,11 +29,11 @@
             = link_to(image_tag('title.png', alt: '合同会社ユーキューブ', width: 180, height: 45), '/', class: 'navbar-brand')
           #header-navbar-collapse.collapse.navbar-collapse.navbar-right
             %ul.nav.navbar-nav
-              = activity_list(icon('home', 'ホーム'), '/', class: 'hidden-sm')
-              = activity_list(icon('cubes', '事業内容'), '/works/')
-              = activity_list(icon('file-text-o', 'おしらせ'), '/announcements/')
-              = activity_list(icon('bullhorn', '代表挨拶'), '/message/')
-              = activity_list(icon('question-circle', 'お問い合わせ'), '/contact/')
+              = activity_list(icon('home', 'ホーム', class: 'fa-fw'), '/', class: 'hidden-sm')
+              = activity_list(icon('cubes', '事業内容', class: 'fa-fw'), '/works/')
+              = activity_list(icon('file-text-o', 'おしらせ', class: 'fa-fw'), '/announcements/')
+              = activity_list(icon('bullhorn', '代表挨拶', class: 'fa-fw'), '/message/')
+              = activity_list(icon('question-circle', 'お問い合わせ', class: 'fa-fw'), '/contact/')
       = yield
       %footer
         %div YouCube LLC.
