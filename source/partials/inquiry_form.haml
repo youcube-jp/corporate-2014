@@ -1,8 +1,8 @@
 .panel.panel-primary
   .panel-heading
-    %h3.panel-title 1分で完了！　今すぐ問い合わせる
+    %h3.panel-title 1分で完了！　今すぐ無料相談する
   %form#inquiry-form.panel-body{method: 'POST', action: 'https://youcube.jp/api/1/inquiries'}
-    %p お問い合わせいただければ、24時間以内に折り返しご連絡いたします。
+    %p ご相談は無料です。24時間以内に折り返しご連絡いたします。
     .row.form-group
       %label.control-label.col-xs-12.col-md-4{for: 'name-input'} お名前 <span class="label label-danger">必須</span>
       .col-xs-12.col-md-8
@@ -19,12 +19,12 @@
         %input#phone-input.form-control{type: 'tel', name: 'phone'}
         #phone-error.error
     .row.form-group
-      %label.control-label.col-xs-12.col-md-4{for: 'message-input'} お問い合わせ内容 <span class="label label-danger">必須</span>
+      %label.control-label.col-xs-12.col-md-4{for: 'message-input'} ご相談内容 <span class="label label-danger">必須</span>
       .col-xs-12.col-md-8
-        %textarea#message-input.form-control{name: 'message', placeholder: '案件の内容、希望納期、ご予算などお書きいただければスムーズです。'}
+        %textarea#message-input.form-control{name: 'message', placeholder: 'お悩み、案件の内容、希望納期、ご予算などお書きいただければスムーズです。'}
         #message-error.error
     .form-group.text-center
-      %button#inquiry-submit.btn.btn-primary= icon('send', '送信する')
+      %button#inquiry-submit.btn.btn-primary= icon('send', '上記内容で無料相談する')
     %p.clearfix.media
       = image_tag('rapidssl_seal.gif', class: 'pull-left')
       お客様の個人情報は SSL で暗号化され、安全に送信されます。<a href="/privacy/">プライバシーポリシー（個人情報保護方針）についてはこちらをご覧ください</a>。
