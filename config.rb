@@ -95,11 +95,11 @@ page '/sitemap.xml', layout: false
 
 # Build-specific configuration
 configure :build do
-  # For example, change the Compass output style for deployment
-  activate :minify_css
-
-  # Minify Javascript on build
   require 'uglifier'
+
+  # Minify files
+  activate :minify_html
+  activate :minify_css
   activate :minify_javascript, compressor: Uglifier.new(comments: :none)
 
   # Enable cache buster
