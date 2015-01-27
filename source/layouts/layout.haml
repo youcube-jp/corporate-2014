@@ -11,8 +11,6 @@
     %meta{property: 'og:image', content: image_url('icon256.png')}
     %meta{property: 'og:locale', content: 'ja_JP'}
     %title= current_page.data.title.try{ |_| "#{_} | 合同会社ユーキューブ" } || '兵庫県三田市のWeb制作会社、合同会社ユーキューブ'
-    = javascript_include_tag 'dependencies', 'application'
-    = stylesheet_link_tag 'application'
     %link{rel: 'author', href: 'http://google.me/+YuNakanishi'}
     %link{rel: 'icon', type: 'image/png', href: image_path('icon32.png')}
     %link{rel: 'apple-touch-icon', type: 'image/png', href: image_path('icon256.png')}
@@ -41,3 +39,5 @@
           = link_to '会社概要', '/company/'
           = '-'
           = link_to 'プライバシーポリシー', '/privacy/'
+    = javascript_include_tag 'dependencies', 'application'
+    = stylesheet_link_tag 'application'
