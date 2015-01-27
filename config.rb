@@ -99,7 +99,8 @@ configure :build do
   activate :minify_css
 
   # Minify Javascript on build
-  activate :minify_javascript
+  require 'uglifier'
+  activate :minify_javascript, compressor: Uglifier.new(comments: :none)
 
   # Enable cache buster
   activate :asset_hash
