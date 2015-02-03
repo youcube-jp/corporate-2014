@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 # Middleman
 gem 'middleman'
 gem 'middleman-livereload'
+gem 'middleman-minify-html'
 
 # Views
 gem 'builder'

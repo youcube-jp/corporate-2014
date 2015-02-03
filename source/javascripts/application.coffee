@@ -40,7 +40,7 @@ inquiry =
     this.get_form().find('.error').hide()
 
   restore_btn: ->
-    this.get_btn().removeClass('btn-success').removeClass('btn-danger').addClass('btn-primary').html('<i class="fa fa-send"></i> 送信する')
+    this.get_btn().removeClass('btn-success').removeClass('btn-danger').addClass('btn-primary').html('<i class="fa fa-send"></i> 上記内容で無料相談する')
 
 $ ->
   inquiry.init()

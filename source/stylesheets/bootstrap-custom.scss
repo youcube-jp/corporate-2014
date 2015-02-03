@@ -21,9 +21,9 @@ $navbar-default-link-active-color:         #ffffff;
 $navbar-default-link-active-bg:            $brand-primary;
 
 // Navbar toggle
-$navbar-default-toggle-hover-bg:           #ddd !default;
-$navbar-default-toggle-icon-bar-bg:        #888 !default;
-$navbar-default-toggle-border-color:       #ddd !default;
+$navbar-default-toggle-hover-bg:           $navbar-default-link-hover-bg;
+$navbar-default-toggle-icon-bar-bg:        $brand-primary;
+$navbar-default-toggle-border-color:       transparent;
 
 // -------------------------------------------------------------------
 // Import Frameworks
