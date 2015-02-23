@@ -43,9 +43,9 @@
 # Methods defined in the helpers block are available in templates
 helpers do
   # active をつけるべきかどうか判断してつけるべきならつけたリンクを生成する
-  # @param [String] リンクラベル
-  # @param [String] リンク先
-  # @param [Hash] li に渡す属性
+  # @param [String] label リンクラベル
+  # @param [String] dest リンク先
+  # @param [Hash] attr li に渡す属性
   def activity_list(label, dest, attr = {})
     if dest == current_page.url
       if attr.has_key?(:class)
