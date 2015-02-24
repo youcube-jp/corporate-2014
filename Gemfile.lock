@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/youcune/carnelian.git
+  revision: a2bde26cf0a59ec4f41103e6e95ec486f93f1915
+  specs:
+    carnelian (1.3.0)
+      activesupport
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -158,6 +165,7 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-sass
   builder
+  carnelian (~> 1.3.0)!
   font-awesome-sass
   middleman
   middleman-livereload

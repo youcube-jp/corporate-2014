@@ -1,71 +1,23 @@
 ---
-title: WordPressおまかせ運用
+title: WordPress おまかせ保守運用
 description: WordPress の保守（サーバー、バックアップ、セキュリティなど面倒な業務）をまとめて月2万円で請け負います。
 ---
 #operation-wordpress-page
   #page-title
     %div= image_tag('hd-wordpress.jpg', class: 'img-responsive img-rounded')
-    %h2 おまかせ運用
+    %h2 WordPress おまかせ保守運用
 = partial 'operations/what'
 %h3.lead-header 面倒なことは弊社にまかせ、本質的な業務に専念できます。
 .row
-  .col-xs-12.col-md-4
-    %h4.text-center サーバー
-    %p.text-center= icon('server', nil, class: 'fa-feature')
-    %ul
-      %li アクセス数に合わせて適切なサーバーの手配
-      %li 15分ごとに正常にアクセスできるか監視
-  .col-xs-12.col-md-4
-    %h4.text-center バックアップ
-    %p.text-center= icon('cloud-upload', nil, class: 'fa-feature')
-    %ul
-      %li サイトのデータを毎日バックアップ
-      %li バックアップは1ヶ月間保持
-      %li 最大1ヶ月前の状態にいつでも戻れます
-      %li 障害でデータが消えてしまった場合だけでなく、誤って削除してしまった場合にも対応
-  .col-xs-12.col-md-4
-    %h4.text-center セキュリティ
-    %p.text-center= icon('shield', nil, class: 'fa-feature')
-    %ul
-      %li 弊社は新たにセキュリティ問題が発見されないか常に情報収集しており、問題が発見された場合は適切に対処
-      %li サイトに不審なアクセスが来ていないか常に監視
-      %li 監視の結果、問題があると思われる場合、弊社に緊急通報が入ります
+  .col-xs-12.col-md-4= partial 'operations/p_server'
+  .col-xs-12.col-md-4= partial 'operations/p_backup'
+  .col-xs-12.col-md-4= partial 'operations/p_security'
 %h3.lead-header さらに、多数の運用実績を活かし、成果が出るようお手伝いします。
 .row
-  .col-xs-12.col-md-4
-    %h4.text-center 独自ドメイン
-    %p.text-center= icon('globe', nil, class: 'fa-feature')
-    %ul
-      %li http://your-business.com/ といった、独自ドメインの取得・設定・管理
-      %li info@your-business.com といった、メールも対応
-      %li 問い合わせフォームなど個人情報の入力があるサイトの場合、個人情報保護のため SSL 証明書の取得・設定・管理
-  .col-xs-12.col-md-4
-    %h4.text-center SEO対策
-    %p.text-center= icon('search', nil, class: 'fa-feature')
-    %ul
-      %li Google の提供する各種ツールを導入し、検索の効果を分析可能に
-      %li 弊社でも随時確認し、改善アドバイスを実施
-  .col-xs-12.col-md-4
-    %h4.text-center サポート
-    %p.text-center= icon('envelope-o', nil, class: 'fa-feature')
-    %ul
-      %li サイト運用上のご相談に応じます
-      %li 簡単な更新作業を実施いたします
-      %li 各サービスの範囲は月1時間程度の作業量が目安です。超える分は都度お見積もりさせていただきます。
-%h3.lead-header Web 担当者を雇用するより、圧倒的に低コストです。
-.row
-  .col-xs-12.col-md-4.col-md-offset-2
-    %h4.text-center 価格
-    %p.text-center= icon('yen', nil, class: 'fa-feature')
-    %ul
-      %li 標準価格 <strong class="pricing">¥20,000/月</strong>(税別)
-      %li <strong class="pricing">¥240,000/年</strong>(税別)
-  .col-xs-12.col-md-4
-    %h4.text-center 長期割引
-    %p.text-center= icon('calendar', nil, class: 'fa-feature')
-    %ul
-      %li 2年間の継続を前提とし前払いしていただける場合の特別割引です。
-      %li ¥80,000 の割引となり、 <strong class="pricing">¥400,000/2年</strong> (税別)
+  .col-xs-12.col-md-4= partial 'operations/p_domain'
+  .col-xs-12.col-md-4= partial 'operations/p_seo'
+  .col-xs-12.col-md-4= partial 'operations/p_support'
+= partial 'operations/pricing', locals: { per_month: 20000 }
 .row
   .col-xs-12.col-md-8.col-md-offset-2
     = partial 'partials/inquiry_form'

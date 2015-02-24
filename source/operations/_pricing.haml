@@ -1,0 +1,14 @@
+%h3.lead-header Web 担当者を雇用するより、圧倒的に低コストです。
+.row
+  .col-xs-12.col-md-5.col-md-offset-1
+    %h4.text-center 価格
+    %p.text-center= icon('yen', nil, class: 'fa-feature')
+    %ul
+      %li 標準価格 #{pricing(per_month, '/月')}(税別)
+      %li お支払いの手間を省きたい方は #{pricing(per_month * 12, '/年')}(税別)
+  .col-xs-12.col-md-5
+    %h4.text-center 長期割引
+    %p.text-center= icon('calendar', nil, class: 'fa-feature')
+    %ul
+      %li 2年間の継続を前提として、2年分を前払いしていただける場合の特別割引です。
+      %li ¥#{(per_month * 4).comma} の割引となり、 #{pricing(per_month * 20, '/2年')}(税別)

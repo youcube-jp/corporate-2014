@@ -79,6 +79,11 @@ helpers do
   def image_url(source)
     'https://youcube.jp' + image_path(source)
   end
+
+  # 金額表示にする
+  def pricing(price, unit = '')
+    content_tag(:strong, "¥#{price.comma}#{unit}", class: 'pricing')
+  end
 end
 
 set :css_dir, 'stylesheets'
