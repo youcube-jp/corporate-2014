@@ -1,0 +1,62 @@
+---
+title: おまかせ運用 (S)
+description: 静的サイトの運用で必要になる業務をまとめて月1万円で請け負います。
+---
+#operation-static-page
+  #page-title
+    %div= image_tag('hd-wordpress.jpg', class: 'img-responsive img-rounded')
+    %h2 おまかせ運用
+
+%h3 おまかせ運用とは？
+%ul
+  %li 30サイト以上の運用経験から、必要な4要素のパッケージです。
+  %li 面倒なことは弊社に任せて、日々の業務に集中することができます。
+%h3 このような方におすすめです
+%ul
+  %li 社内に Web 担当者がおらず、管理業務を任せて日々の業務に集中したい
+  %li Web サイトを持っているが、アクセス数など把握できておらず、どれだけ利益貢献しているか把握できていない
+  %li Web サイトを使い、より効果をあげるにはどのようにすればよいかよく分からない
+%h3 サービス内容
+.row
+  .col-xs-12.col-md-4
+    %h4.text-center サーバー
+    %p.text-center= icon('server', nil, class: 'fa-feature')
+    %ul
+      %li アクセス数に合わせて適切なサーバーの手配
+      %li 15分ごとに正常にアクセスできるか監視
+  .col-xs-12.col-md-4
+    %h4.text-center 独自ドメイン
+    %p.text-center= icon('globe', nil, class: 'fa-feature')
+    %ul
+      %li http://your-business.com/ といった、独自ドメインの取得・設定・管理
+      %li info@your-business.com といった、メールも対応
+      %li 問い合わせフォームなど個人情報の入力があるサイトの場合、個人情報保護のため SSL 証明書の取得・設定・管理
+  .col-xs-12.col-md-4
+    %h4.text-center SEO対策
+    %p.text-center= icon('search', nil, class: 'fa-feature')
+    %ul
+      %li Google の提供する各種ツールを導入し、検索の効果を分析可能に
+      %li 弊社でも随時確認し、改善アドバイスを実施
+.row
+  .col-xs-12.col-md-4
+    %h4.text-center サポート
+    %p.text-center= icon('envelope-o', nil, class: 'fa-feature')
+    %ul
+      %li サイト運用上のご相談に応じます
+      %li 簡単な更新作業を実施いたします
+      %li 各サービスの範囲は月1時間程度の作業量が目安です。超える分は都度お見積もりさせていただきます。
+  .col-xs-12.col-md-4
+    %h4.text-center 価格
+    %p.text-center= icon('yen', nil, class: 'fa-feature')
+    %ul
+      %li 標準価格 <strong class="pricing">¥10,000/月</strong>(税別)
+      %li <strong class="pricing">¥120,000/年</strong>(税別)
+  .col-xs-12.col-md-4
+    %h4.text-center 長期割引
+    %p.text-center= icon('calendar', nil, class: 'fa-feature')
+    %ul
+      %li 2年間の継続を前提とし前払いしていただける場合の特別割引です。
+      %li ¥40,000 の割引となり、 <strong class="pricing">¥200,000/2年</strong> (税別)
+  .row
+    .col-xs-12.col-md-8.col-md-offset-2
+      = partial 'partials/inquiry_form'

@@ -7,6 +7,20 @@
 @import "font-awesome";
 
 // -------------------------------------------------------------------
+// Extends FontAwesome
+// -------------------------------------------------------------------
+.fa-feature {
+  border: 2px solid $gray-lighter;
+  border-radius: 50%;
+  font-size: 5em;
+  height: sqrt(2em);
+  line-height: sqrt(2em);
+  text-align: center;
+  vertical-align: middle;
+  width: sqrt(2em);
+}
+
+// -------------------------------------------------------------------
 // Site Core Styles
 // -------------------------------------------------------------------
 header {
