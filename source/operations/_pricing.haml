@@ -4,8 +4,8 @@
     %h4.text-center 価格
     %p.text-center= icon('yen', nil, class: 'fa-feature')
     %ul
-      %li 標準価格 #{pricing(per_month, '/月')}(税別)
-      %li お支払いの手間を省きたい方は #{pricing(per_month * 12, '/年')}(税別)
+      %li 標準価格 #{pricing(per_month * 12, '/年')}(税別)
+      %li 1ヶ月あたりに換算すると #{pricing(per_month, '/月')}(税別)
   .col-xs-12.col-md-5
     %h4.text-center 長期割引
     %p.text-center= icon('calendar', nil, class: 'fa-feature')
