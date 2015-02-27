@@ -103,8 +103,10 @@ configure :build do
   require 'uglifier'
 
   # Minify files
-  activate :minify_html do |_|
-    _.preserve_line_breaks = true
+  activate :minify_html do |html|
+    html.preserve_line_breaks  = true
+    html.remove_http_protocol  = false
+    html.remove_https_protocol = false
   end
   activate :minify_css
   activate :minify_javascript, compressor: Uglifier.new(comments: :none)
