@@ -84,6 +84,21 @@ helpers do
   def pricing(price, unit = '')
     content_tag(:strong, "¥#{price.comma}#{unit}", class: 'pricing')
   end
+
+  # 消費税率を返す
+  def tax_rate
+    8
+  end
+
+  # 消費税額を返す
+  def tax_price(price)
+    price * tax_rate / 100
+  end
+
+  # 税込価格を返す
+  def price_including_tax(price)
+    price + tax_price(price)
+  end
 end
 
 set :css_dir, 'stylesheets'

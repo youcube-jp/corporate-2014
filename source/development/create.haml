@@ -1,14 +1,37 @@
 ---
-title: Web 制作案内
-description: ユーキューブで新しく Web サイト（ホームページ）を制作する場合、制作の流れやお見積例を紹介しています。
+title: Webサイト（ホームページ）制作事例と見積例
+description: ユーキューブで新しく WordPress の Web サイト（ホームページ）を制作する事例やお見積例を紹介しています。
 ---
-#operation-wordpress-page
-  #page-title
-    %div= image_tag('hd-wordpress.jpg', class: 'img-responsive img-rounded')
-    %h2 Web 制作案内
-%h3.lead-header 全案件でレスポンシブデザインを採用しています
+
+#page-title
+  %div= image_tag('hd-wordpress.jpg', class: 'img-responsive img-rounded')
+  %h1 Web 制作
+%h2.lead-header ユーキューブのWeb制作は、3つの特長があります。
 .row
-  .col-xs-12.col-md-4= partial 'development/p_responsive'
+  .col-xs-12.col-md-4
+    %h3.text-center レスポンシブデザイン
+    %p.text-center= icon('mobile-phone', nil, class: 'fa-feature')
+    %ul
+      %li デスクトップ、タブレット、スマートフォンのどの端末で見ても最適に表示されます。
+      %li スマートフォンのアクセスが半数を超えることも多く、スマートフォンに対応しているかどうかが検索順位に影響するため、これからの標準的手法になっていきます。
+  .col-xs-12.col-md-4
+    %h3.text-center WordPress
+    %p.text-center= icon('wordpress', nil, class: 'fa-feature')
+    %ul
+      %li 管理画面でサイトを更新することができるシステムです。
+      %li これまでは更新のたびに料金が発生する契約が一般的でしたが、更新作業を簡単に行えるためコストを削減できます。
+    %p.text-center= link_to(icon('hand-o-right', '詳しく見る'), '/wordpress/intro/', class: 'btn btn-primary', target: :_blank)
+  .col-xs-12.col-md-4
+    %h3.text-center 保守運用もおまかせ
+    %p.text-center= icon('line-chart', nil, class: 'fa-feature')
+    %ul
+      %li 面倒な作業は弊社にまかせて、本質的な業務に集中することができます。
+      %li 弊社は利益向上のアドバイスや改善施策を担当します。
+    %p.text-center= link_to(icon('hand-o-right', '詳しく見る'), '/operations/wordpress/', class: 'btn btn-primary', target: :_blank)
+%h2 導入事例
+%p 準備中です
+%h2 お見積例
+%p 準備中です
 .row
   .col-xs-12.col-md-8.col-md-offset-2
     = partial 'partials/inquiry_form'

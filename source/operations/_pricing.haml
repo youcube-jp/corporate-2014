@@ -1,14 +1,25 @@
-%h3.lead-header Web 担当者を雇用するより、圧倒的に低コストです。
+%h2.lead-header Web 担当者を雇用するより、圧倒的に低コストです。
+%h3 価格
+%ul
+  %li 標準価格 #{pricing(per_month * 12, '/年')}(税別)、1ヶ月あたりに換算すると #{pricing(per_month, '/月')}(税別)
+  %li 弊社は<strong>「Webサイトをいかに利益につなげるか」を専門</strong>としています。「コスト」ではなく弊社とパートナーになることを「投資」と考えて、価格の妥当性をご検討いただければ幸いです。
+  %li サービス内容が同じである場合、お客様によって価格を変えることはいたしません。#{link_to('詳しくはこちら', '/fare-pricing-policy/')}
 .row
-  .col-xs-12.col-md-5.col-md-offset-1
-    %h4.text-center 価格
-    %p.text-center= icon('yen', nil, class: 'fa-feature')
-    %ul
-      %li 標準価格 #{pricing(per_month * 12, '/年')}(税別)
-      %li 1ヶ月あたりに換算すると #{pricing(per_month, '/月')}(税別)
-  .col-xs-12.col-md-5
-    %h4.text-center 長期割引
+  .col-xs-12.col-md-4
+    %h3.text-center 長期割引
     %p.text-center= icon('calendar', nil, class: 'fa-feature')
     %ul
       %li 2年間の継続を前提として、2年分を前払いしていただける場合の特別割引です。
       %li ¥#{(per_month * 4).comma} の割引となり、 #{pricing(per_month * 20, '/2年')}(税別)
+  .col-xs-12.col-md-4
+    %h3.text-center 複数サイト割引
+    %p.text-center= icon('cubes', nil, class: 'fa-feature')
+    %ul
+      %li 複数のサイトの運用をおまかせいただける場合、2サイト目以降に適用される特別割引です。
+      %li 実際の割引率についてはご利用状況によるため、お問い合わせください。
+  .col-xs-12.col-md-4
+    %h3.text-center ご紹介割引
+    %p.text-center= icon('users', nil, class: 'fa-feature')
+    %ul
+      %li 他社をご紹介いただき、その方も保守運用プランをご契約いただいた場合に適用される特別割引です。
+      %li 1件紹介いただけるごとに、次回契約更新時から1ヶ月分の価格 #{pricing(per_month)} を割引。
