@@ -1,7 +1,34 @@
 #index-page
   .row
-    .col-xs-12.col-sm-8.col-sm-offset-2
+    .col-xs-12.col-sm-6.col-sm-push-6
       %p#logo= link_to(image_tag('icon750.png', alt: 'ユーキューブ', class: 'img-responsive'), '/works/')
+    .col-xs-12.col-sm-6.col-sm-pull-6
+      %p.lead ユーキューブは、Webサイト（ホームページ）の制作、運用を通して利益向上のお手伝いをする、兵庫県三田市発のWebコンサルティングファームです。
+  .services-lg.row.container-fluid.little-gutter
+    .col-xs-12.col-sm-6.col-lg-3
+      %section.service
+        .small 現在 Web サイトをお持ちでない方
+        %h2 会社や店舗の Web サイトを持ちたい
+        %p スマートフォン、デスクトップ両対応の Web サイトをご提案します。
+        %p.text-center= link_to(icon('hand-o-right', '詳しく見る'), '/development/create/', class: 'btn btn-primary')
+    .col-xs-12.col-sm-6.col-lg-3
+      %section.service
+        .small すでに Web サイトをお持ちの方
+        %h2 スマートフォン対応させたい
+        %p 昔作った Web サイトをスマートフォンに対応させてみませんか？
+        %p.text-center= link_to(icon('hand-o-right', '詳しく見る'), '/development/responsive/', class: 'btn btn-primary')
+    .col-xs-12.col-sm-6.col-lg-3
+      %section.service
+        .small すでに Web サイトをお持ちの方
+        %h2 利益につながるよう改善したい
+        %p なかなか効果が感じられなくお悩みの方、ご相談ください。
+        %p.text-center= link_to(icon('envelope-o', '無料相談する'), '/contact/', class: 'btn btn-primary')
+    .col-xs-12.col-sm-6.col-lg-3
+      %section.service
+        .small すでに Web サイトをお持ちの方
+        %h2 管理をまるごと任せたい
+        %p サーバーやドメインなど、管理をまるごと引き受けます。
+        %p.text-center= link_to(icon('hand-o-right', '詳しく見る'), '/operations/static/', class: 'btn btn-primary')
   %p
     %span.label.label-default 最新のおしらせ
     = "#{announcements.last['date']}：#{announcements.last['text']}"

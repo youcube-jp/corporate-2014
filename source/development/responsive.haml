@@ -1,0 +1,80 @@
+---
+title: スマートフォンWebサイト（ホームページ）制作
+description: 現在Webサイト（ホームページ）をお持ちの方で、スマートフォン対応サイトにリニューアルする事例やお見積例を紹介しています。
+---
+
+#page-title
+  %div= image_tag('hd-wordpress.jpg', class: 'img-responsive img-rounded')
+  %h1 スマートフォンサイト制作
+%p ユーキューブでは、デスクトップ、タブレット、スマートフォンのどの端末で見ても最適に表示される「レスポンシブデザイン」という新しい手法を用いて、既存の Web サイトのスマートフォン対応を支援いたします。
+%h2.lead-header レスポンシブデザインをおすすめする理由は3つあります。
+.row
+  .col-xs-12.col-md-4
+    %h3.text-center スマホが増加
+    %p.text-center= icon('line-chart', nil, class: 'fa-feature')
+    %ul
+      %li デスクトップよりスマートフォンのアクセス数が上回る事例が増えてきた
+      %li 今後タブレットや Apple Watch のような端末の普及が進み、さらに多くのデバイスが生まれることが予想される
+  .col-xs-12.col-md-4
+    %h3.text-center SEO
+    %p.text-center= icon('google', nil, class: 'fa-feature')
+    %ul
+      %li Webサイトの訪問は、 Google などの検索エンジンからという場合が多い
+      %li 2015年4月21日、 Google の検索順位のアルゴリズムが変更され、「スマートフォンで検索するとスマホ対応サイトを優遇する」ことが発表された
+  .col-xs-12.col-md-4
+    %h3.text-center サイトは1つ
+    %p.text-center= icon('cube', nil, class: 'fa-feature')
+    %ul
+      %li レスポンシブデザインを適用すると1サイトの制作コストで対応できる
+      %li 少し前までは「PC用サイト」「スマホ用サイト」と別に制作し、更新時には2サイト分対応するというのが主流だった
+%h2 導入事例
+%p 準備中です
+%h2 お見積例
+%table.table.table-bordered
+  %thead
+    %tr
+      %th 品名
+      %th 数量
+      %th 単価
+      %th 金額
+  %tbody
+    %tr
+      %td レスポンシブ対応（トップページ）
+      %td.text-right 1 <small>ページ</small>
+      %td.text-right ¥30,000
+      %td.text-right ¥30,000
+    %tr
+      %td レスポンシブ対応（下層ページ）
+      %td.text-right 4 <small>ページ</small>
+      %td.text-right ¥5,000
+      %td.text-right ¥20,000
+    %tr
+      %td ディレクション（進行・管理 / 上記20%）
+      %td.text-right 1 <small>式</small>
+      %td.text-right ¥10,000
+      %td.text-right ¥10,000
+    %tr
+      %td おまかせ保守運用（1年分）
+      %td.text-right 12 <small>ヶ月</small>
+      %td.text-right ¥15,000
+      %td.text-right ¥180,000
+  %tfoot
+    %tr
+      %td{colspan: 3} 小計
+      %td.text-right ¥240,000
+    %tr
+      %td{colspan: 3} 消費税 (#{tax_rate}%)
+      %td.text-right ¥#{tax_price(240000).comma}
+    %tr
+      %td{colspan: 3} 合計
+      %td.text-right ¥#{price_including_tax(240000).comma}
+%h3 前提
+%ul
+  %li トップページ＋下層ページ4ページの全5ページ
+  %li 現在は他社で制作したWebサイトを持っており、コストがかかったので無駄にしたくない
+  %li 画像、デザインなどはできるだけ使い回し、コストをおさえる
+  %li 掲載されている内容を大きく追加・変更しない
+  %li 保守運用もあわせて委託（#{link_to('詳しいサービス内容はこちら', '/operations/static/')}）
+.row
+  .col-xs-12.col-md-8.col-md-offset-2
+    = partial 'partials/inquiry_form'
