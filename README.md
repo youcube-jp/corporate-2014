@@ -14,6 +14,14 @@ $ bundle install --path vendor/bundle --jobs=4
 $ bundle exec middleman server
 ```
 
-http://localhost:3000/
+http://localhost:4567/
 
-^C で終了
+## サーバー終了
+
+^C
+
+## LICENSE
+
+- Impliments and Source Codes: Public Domain
+- Texts: No License
+- Images: No License
