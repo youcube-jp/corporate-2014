@@ -18,8 +18,7 @@ inquiry =
       )
       .done (data) ->
         if data && data.status == 'CREATED'
-          alert('お問い合わせありがとうございます。お返事いたしますのでしばらくお待ちくださいませ。')
-          $btn.removeClass('btn-primary').addClass('btn-success').html('<i class="fa fa-check"></i> 送信しました！')
+          location.href = '/completion/'
       .fail (jqXHR) ->
         $btn.removeClass('btn-primary').addClass('btn-danger').html('<i class="fa fa-times"></i> 失敗しました！')
         data = jqXHR.responseJSON
