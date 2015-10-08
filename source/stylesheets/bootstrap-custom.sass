@@ -1,0 +1,164 @@
+// -------------------------------------------------------------------
+// Override Variables
+// -------------------------------------------------------------------
+//== Colors
+$brand-primary: #4CB55B
+
+//== Typography
+$font-family-sans-serif: 'Lucida Grande', Verdana, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif
+$font-family-serif: Georgia, 'Hiragino Mincho ProN', serif
+$font-family-monospace: Menlo, 'Courier New', 'Hiragino Kaku Gothic ProN', monospace
+$font-size-base:          14px !default
+$font-size-h1:            floor($font-size-base * 2.15) !default
+$font-size-h2:            ceil($font-size-base * 1.7) !default
+$font-size-h3:            ceil($font-size-base * 1.25) !default
+$font-size-h4:            $font-size-base !default
+$font-size-h5:            ceil($font-size-base * 0.85) !default
+$font-size-h6:            ceil($font-size-base * 0.85) !default
+
+// Basics of a navbar
+$navbar-collapse-max-height:       340px !default
+$navbar-default-bg:                #ffffff
+$navbar-default-border:            #ffffff
+$navbar-padding-horizontal:        0
+
+// Navbar links
+$navbar-default-link-color:                $brand-primary
+$navbar-default-link-hover-color:          $brand-primary
+$navbar-default-link-hover-bg:             darken(lighten($brand-primary, 100%), 5%)
+$navbar-default-link-active-color:         #ffffff
+$navbar-default-link-active-bg:            $brand-primary
+
+// Navbar toggle
+$navbar-default-toggle-hover-bg:           $navbar-default-link-hover-bg
+$navbar-default-toggle-icon-bar-bg:        $brand-primary
+$navbar-default-toggle-border-color:       transparent
+
+// -------------------------------------------------------------------
+// Import Frameworks
+// -------------------------------------------------------------------
+// Core variables and mixins
+@import "bootstrap/variables"
+@import "bootstrap/mixins"
+
+// Reset and dependencies
+@import "bootstrap/normalize"
+@import "bootstrap/print"
+@import "bootstrap/glyphicons"
+
+// Core CSS
+@import "bootstrap/scaffolding"
+@import "bootstrap/type"
+//@import "bootstrap/code"
+@import "bootstrap/grid"
+@import "bootstrap/tables"
+@import "bootstrap/forms"
+@import "bootstrap/buttons"
+
+// Components
+@import "bootstrap/component-animations"
+//@import "bootstrap/dropdowns"
+//@import "bootstrap/button-groups"
+//@import "bootstrap/input-groups"
+@import "bootstrap/navs"
+@import "bootstrap/navbar"
+//@import "bootstrap/breadcrumbs"
+//@import "bootstrap/pagination"
+//@import "bootstrap/pager"
+@import "bootstrap/labels"
+//@import "bootstrap/badges"
+//@import "bootstrap/jumbotron"
+//@import "bootstrap/thumbnails"
+//@import "bootstrap/alerts"
+//@import "bootstrap/progress-bars"
+@import "bootstrap/media"
+//@import "bootstrap/list-group"
+@import "bootstrap/panels"
+//@import "bootstrap/responsive-embed"
+//@import "bootstrap/wells"
+//@import "bootstrap/close"
+
+// Components w/ JavaScript
+//@import "bootstrap/modals"
+//@import "bootstrap/tooltip"
+//@import "bootstrap/popovers"
+//@import "bootstrap/carousel"
+
+// Utility classes
+@import "bootstrap/utilities"
+@import "bootstrap/responsive-utilities"
+
+// -------------------------------------------------------------------
+// Scaffolding
+// -------------------------------------------------------------------
+html
+  overflow-y: scroll
+
+// -------------------------------------------------------------------
+// Type
+// -------------------------------------------------------------------
+.lead, .lead-header
+  font-family: $font-family-serif
+
+// -------------------------------------------------------------------
+// Grid
+// -------------------------------------------------------------------
+// col 同士の溝をなくす
+.no-gutter > [class*='col-']
+  padding-right: 0
+  padding-left: 0
+
+// col 同士の溝を狭くする
+.container-fluid.little-gutter
+  $little-gutter: $line-height-computed / 8
+
+  padding-left:  $grid-gutter-width / 2 - $little-gutter
+  padding-right: $grid-gutter-width / 2 - $little-gutter
+
+  > [class*='col-']
+    padding: $little-gutter
+
+// -------------------------------------------------------------------
+// Tables
+// -------------------------------------------------------------------
+td
+  *:first-child
+    margin-top: 0
+  
+  *:last-child
+    margin-bottom: 0
+
+  &.icon-cell
+    text-align: center
+    vertical-align: middle !important
+
+// -------------------------------------------------------------------
+// Forms
+// -------------------------------------------------------------------
+textarea.form-control
+  height: $font-size-base * 8
+
+.error
+  background: $label-danger-bg
+  border-radius: $border-radius-base
+  color: $label-color
+  display: none
+  padding: $line-height-computed/4 $line-height-computed/2
+
+
+// -------------------------------------------------------------------
+// Navbar
+// -------------------------------------------------------------------
+.navbar-brand
+  $title-logo-height: 45px
+  $vertical-padding: ($navbar-height - $title-logo-height) / 2
+  padding: $vertical-padding 15px $vertical-padding 0
+
+.navbar-nav
+  > li > a
+    @media (min-width: $screen-sm-min)
+      border-radius: $border-radius-base
+
+  @media (max-width: $screen-xs-max)
+    border: 1px solid lighten($brand-primary, 25%)
+    border-radius: $border-radius-base

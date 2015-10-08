@@ -1,0 +1,103 @@
+// -------------------------------------------------------------------
+// Import Frameworks
+// -------------------------------------------------------------------
+@import "bootstrap-sprockets"
+@import 'bootstrap-custom'
+@import "font-awesome-sprockets"
+@import "font-awesome"
+
+// -------------------------------------------------------------------
+// Extends FontAwesome
+// -------------------------------------------------------------------
+.fa-feature
+  border: 2px solid $gray-lighter
+  border-radius: 50%
+  font-size: 5em
+  height: sqrt(2em)
+  line-height: sqrt(2em)
+  text-align: center
+  vertical-align: middle
+  width: sqrt(2em)
+
+.fa-strong
+  font-size: 200%
+  color: $brand-primary
+
+.fa-weak
+  color: $gray-light
+
+// -------------------------------------------------------------------
+// Site Core Styles
+// -------------------------------------------------------------------
+header
+  margin-top: $line-height-computed / 2
+
+footer
+  border-top: 1px dashed #999999
+  margin: $line-height-computed / 2 0
+  padding-top: $line-height-computed / 2
+  text-align: center
+
+th
+  text-align: center
+
+#page-title
+  margin-bottom: $line-height-computed
+  position: relative
+
+  h1
+    background: #000000
+    bottom: 0
+    border-radius: $border-radius-base
+    color: #ffffff
+    left: 0
+    margin: 0
+    opacity: 0.75
+    position: absolute
+
+    @media (max-width: $screen-xs-max)
+      font-size: 18px
+      padding: 6px
+    
+    @media (min-width: $screen-sm-min)
+      font-size: 24px
+      padding: 8px
+    
+  
+
+// -------------------------------------------------------------------
+// Page Styles
+// -------------------------------------------------------------------
+@import 'pages/index'
+@import 'pages/works'
+@import 'pages/operations'
+
+// -------------------------------------------------------------------
+// Common Styles
+// -------------------------------------------------------------------
+.services, .services-lg
+  margin-bottom: $line-height-computed * (3 / 8)
+
+  section.service
+    border: 1px solid #cccccc
+    border-radius: $border-radius-base
+    height: 160px
+    padding: $line-height-computed / 2
+    overflow: hidden
+
+    h2, h3
+      font-size: 20px
+      margin-top: 0
+    
+  
+
+.services-lg
+  section.service
+    height: 175px
+  
+
+.pricing
+  color: $brand-primary
+  font-size: 150%
+  font-weight: bold
+

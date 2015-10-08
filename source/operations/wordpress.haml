@@ -1,23 +1,122 @@
 ---
 title: WordPress おまかせ保守運用
-description: WordPress の保守（サーバー、バックアップ、セキュリティなど面倒な業務）をまとめて月2万円で請け負います。
+description: WordPress の保守（サーバー、バックアップ、セキュリティ）をまとめて請け負います。利益向上コンサルティングや日常の運用業務もお任せいただけます。
 ---
-#operation-wordpress-page
-  #page-title
-    %div= image_tag('hd-wordpress.jpg', class: 'img-responsive img-rounded')
-    %h1 WordPress おまかせ保守運用
-= partial 'operations/what'
-%h2.lead-header 面倒なことは弊社にまかせ、本質的な業務に専念できます。
-.row
-  .col-xs-12.col-md-4= partial 'operations/p_server'
-  .col-xs-12.col-md-4= partial 'operations/p_backup'
-  .col-xs-12.col-md-4= partial 'operations/p_security'
-%h2.lead-header さらに、多数の運用実績を活かし、成果が出るようお手伝いします。
-.row
-  .col-xs-12.col-md-4= partial 'operations/p_domain'
-  .col-xs-12.col-md-4= partial 'operations/p_seo'
-  .col-xs-12.col-md-4= partial 'operations/p_support'
-= partial 'operations/pricing', locals: { per_month: 20000 }
-.row
-  .col-xs-12.col-md-8.col-md-offset-2
-    = partial 'partials/inquiry_form'
+#operations-wordpress-page
+  %h1 WordPress おまかせ保守運用
+  #essential.appeal-area
+    .row
+      .col-md-6
+        .appeal-text
+          %h2.lead-header サーバー管理は弊社にまかせ、本業に集中してください。
+          %p サーバー、バックアップ、セキュリティなど、安定運用に必要と考えられることをすべて<sup>*1</sup> 代行いたしますので、お客様は本業に集中することができます。
+          %p 昨今のサイバー攻撃による脅威の高まりから、「誰でも簡単に WordPress サイトが持てる」という時代ではなくなりつつあり、専門家が安全に管理することが必要になってきています。
+  #consulting.appeal-area
+    .row
+      .col-md-6.col-md-offset-6
+        .appeal-text
+          %h2.lead-header 利益向上コンサルティングで集客につなげましょう。
+          %p WordPress サイトをただ作っただけなら、それはコストにしかなりません。弊社は Web から利益向上につなげる、「いかに多くの人に見てもらい、売上につなげるか？」というノウハウを持っておりますので、随時改善アドバイスを実施します。
+          %p.small Self プラン、 Full プランのサービスとなります。
+  #operations.appeal-area
+    .row
+      .col-md-6
+        .appeal-text
+          %h2.lead-header 日々更新する人員が確保できない場合、運用業務も代行します。
+          %p メニューを変更したい、少し見た目を変えたい、訪問者数が知りたいなど、依頼いただければ対応いたします。また、こちらで利益向上の施策を実施していきます（合計で月4時間程度までの作業が目安）。 Web のすべてをおまかせいただけます。
+          %p.small Full プランのサービスとなります。
+  %h2.lead-header Web 担当者を雇用するより、圧倒的に低コストです。
+  %p どこまで弊社におまかせいただくかにより、3プランをご用意いたしました。
+  .table-responsive
+    %table.table.table-bordered
+      %thead
+        %tr
+          %td
+          %td
+            %small 利益向上コンサルティングが不要な方向けの
+            .text-center <b>Essential プラン</b>
+          %td
+            %small 日々の運用業務は社内で実施できる方向けの
+            .text-center <b>Self プラン</b>
+          %td
+            %small Web についてすべて任せたい方向けの
+            .text-center <b>Full プラン</b>
+      %tbody
+        %tr
+          %td
+            %h3= icon('server', 'サーバー')
+            %ul
+              %li 適切なサーバーの手配・運用<sup>*2</sup>
+              %li 一定時間ごとに正常にアクセスできるか監視
+          %td.icon-cell= icon('check', nil, class: 'fa-strong')
+          %td.icon-cell= icon('check', nil, class: 'fa-strong')
+          %td.icon-cell= icon('check', nil, class: 'fa-strong')
+        %tr
+          %td
+            %h3= icon('cloud-upload', 'バックアップ')
+            %ul
+              %li データを毎日バックアップし一定期間保持
+              %li 障害や誤って削除してしまった場合に復元
+          %td.icon-cell
+            = icon('check', nil, class: 'fa-strong')
+            %br
+            復元は有償
+          %td.icon-cell= icon('check', nil, class: 'fa-strong')
+          %td.icon-cell= icon('check', nil, class: 'fa-strong')
+        %tr
+          %td
+            %h3= icon('shield', 'セキュリティ')
+            %ul
+              %li セキュリティの問題に適切に対処
+              %li 不審なアクセスないか常に監視
+          %td.icon-cell= icon('check', nil, class: 'fa-strong')
+          %td.icon-cell= icon('check', nil, class: 'fa-strong')
+          %td.icon-cell= icon('check', nil, class: 'fa-strong')
+        %tr
+          %td
+            %h3= icon('globe', '独自ドメイン')
+            %ul
+              %li your-business.com のような独自ドメインの管理<sup>*3</sup>
+              %li info@your-business.com のようなメールにも対応
+          %td.icon-cell= icon('check', nil, class: 'fa-strong')
+          %td.icon-cell= icon('check', nil, class: 'fa-strong')
+          %td.icon-cell= icon('check', nil, class: 'fa-strong')
+        %tr
+          %td
+            %h3= icon('line-chart', '利益向上コンサルティング')
+            %ul
+              %li SEO 対策を含め、利益向上の運用をアドバイス
+              %li アクセス解析を導入し、効果を可視化
+          %td.icon-cell= icon('times', nil, class: 'fa-weak')
+          %td.icon-cell= icon('check', nil, class: 'fa-strong')
+          %td.icon-cell= icon('check', nil, class: 'fa-strong')
+        %tr
+          %td
+            %h3= icon('laptop', '日々の運用業務')
+            %ul
+              %li 日々の更新業務や軽微な修正依頼に対応
+              %li 利益向上施策を実行
+          %td.icon-cell= icon('times', nil, class: 'fa-weak')
+          %td.icon-cell= icon('times', nil, class: 'fa-weak')
+          %td.icon-cell
+            = icon('check', nil, class: 'fa-strong')
+            %br
+            月4時間程度まで
+        %tr
+          %td
+            %h3= icon('yen', '標準価格 (月額)')
+            %ul
+              %li 価格は税別です
+              %li 1年分の前払いで初月無料となります
+              %li 規模により変動するため、詳細はお問い合わせください
+          %td.icon-cell.text-center.text-primary.pricing ¥9,800
+          %td.icon-cell.text-center.text-primary.pricing ¥24,800
+          %td.icon-cell.text-center.text-primary.pricing ¥39,800
+  %p 上記プラン以外にも、ご要望に応じてご提案させていただきます。まずはお問い合わせください。
+  .row
+    .col-xs-12.col-md-8.col-md-offset-2
+      = partial 'partials/inquiry_form'
+  %p.small
+    *1 詳細なサービス内容については価格表をご確認ください<br>
+    *2 訪問者数は 10,000人/月 程度を想定しており、継続的に大きく超過する場合には料金についてご相談させていただく場合がございます<br>
+    *3 独自ドメインをお客様で用意し、更新管理もしていただく場合、年間 ¥5,000 円引きとなります
