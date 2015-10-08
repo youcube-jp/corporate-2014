@@ -1,0 +1,92 @@
+---
+title: レスポンシブデザインとは
+description: レスポンシブデザインとは、一つのページで、携帯やパソコンなどの様々な機器で対応できるデザインのことです。
+---
+#responsive-page
+  #page-title
+    %div= image_tag('lp4.jpg', class: 'img-responsive img-rounded')
+
+
+  %h2.text-center= icon('question', 'そもそもスマホ対応ページって？', style: 'color: #999999;')
+  %div= image_tag('lp5.jpg', class: 'img-responsive img-rounded', border: '5')
+
+  %div= image_tag('lp2.jpg', class: 'img-responsive img-rounded', border: '5')
+  %h1 そんな疑問にお答えします！
+  %div= image_tag('lp3.jpg', class: 'img-responsive img-rounded', border: '5')
+  %p 今お持ちのサイトでも簡単に対応！
+
+  %h2 お見積例
+  %table.table.table-bordered
+    %thead
+      %tr
+        %th 品名
+        %th 数量
+        %th 単価
+        %th 金額
+    %tbody
+      %tr
+        %td レスポンシブ対応（トップページ）
+        %td.text-right 1 <small>ページ</small>
+        %td.text-right ¥30,000
+        %td.text-right ¥30,000
+      %tr
+        %td レスポンシブ対応（下層ページ）
+        %td.text-right 4 <small>ページ</small>
+        %td.text-right ¥5,000
+        %td.text-right ¥20,000
+      %tr
+        %td ディレクション（進行・管理 / 上記20%）
+        %td.text-right 1 <small>式</small>
+        %td.text-right ¥10,000
+        %td.text-right ¥10,000
+      %tr
+        %td おまかせ保守運用（1年分）
+        %td.text-right 12 <small>ヶ月</small>
+        %td.text-right ¥15,000
+        %td.text-right ¥180,000
+    %tfoot
+      %tr
+        %td{colspan: 3} 小計
+        %td.text-right ¥240,000
+      %tr
+        %td{colspan: 3} 消費税 (#{tax_rate}%)
+        %td.text-right ¥#{tax_price(240000).comma}
+      %tr
+        %td{colspan: 3} 合計
+        %td.text-right ¥#{price_including_tax(240000).comma}
+
+  %div= image_tag('lp6.jpg', class: 'img-responsive img-rounded', border: '5')
+  %div= image_tag('lp7.jpg', class: 'img-responsive img-rounded', border: '5')
+
+  .page-lead
+    %h3 Q&A
+
+    %table.table
+      %tr
+        %td
+          %p
+            %a{href: '#q1'}Q.昔作ったサイトがあるのですが、使えますか？
+          %p
+            %a{href: '#q2'}Q.作った後のサポートはありますか？
+          %p
+            %a{href: '#q3'}Q.なるべく安く納めたいのですが・・・
+          %p
+            %a{href: '#q4'}Q.スマホ対応にする事によって何かいい事はありますか？
+          %p
+            %a{href: '#q5'}Q.サイトを持ってなく、知識もないけど作りたいのですが。
+
+
+    %h3#q1 Q.昔作ったサイトがあるのですが、使えますか？
+    %p A.画像、デザインなどはできるだけ使い回し、大幅な変更を減らす事でコストをおさえる事ができます。
+
+    %h3#q2 Q.作った後のサポートはありますか？
+    %p A.SEO対策やサーバーの手配など、面倒なことは弊社にお任せ下さい！Web 担当者を雇用するより、圧倒的に低コストです。
+
+    %h3#q3 Q.なるべく安く納めたいのですが・・・
+    %p A.まずは予算や考えている内容を、無料見積もりで具体的にご相談ください。
+
+    %h3#q4 Q.スマホ対応にする事によって何かいい事はありますか？
+    %p A.デスクトップよりスマートフォンのアクセス数が上回る事例が増えてきた為、対応していないページより対応しているページの方が見られる傾向にあります。検索順位にも影響される為、スマホ対応にする事でアクセス数の伸びがある事が予想されます。
+
+    %h3#q5 Q.サイトを持ってなく、知識もないけど作りたいのですが。
+    %p A.一から作る場合でも丁寧にご相談させていただきます。サポートもお任せください。

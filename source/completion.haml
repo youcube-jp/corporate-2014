@@ -6,20 +6,9 @@ title: お問い合わせ完了
     %div= image_tag('hd-completion.jpg', class: 'img-responsive img-rounded')
     %h1 お問い合わせ完了
 
-%h3 お問い合わせありがとうございます。お返事いたしますのでしばらくお待ちくださいませ。
+  %h3 お問い合わせありがとうございます。お返事いたしますのでしばらくお待ちくださいませ。
 
-%p#contact-directly お急ぎの方はお電話、または電子メール、 Twitter でもお受けしております。
-.row
-  .col-xs-12.col-sm-4
-    %p.text-center= icon('phone', nil, class: 'fa-5x', style: 'color: #009900;')
-    %p.text-center= link_to(icon('phone', '050-313-66666'), 'tel:05031366666', class: 'btn btn-primary')
-    %p お電話でのお問い合わせの受付時間は8～23時（年中無休）です。
-    %p.small * 不動産投資および各種保険には関心ございませんので連絡はご遠慮ください。お互い時間を有効に使いましょう。
-  .col-xs-12.col-sm-4
-    %p.text-center= icon('envelope-o', nil, class: 'fa-5x', style: 'color: #3399ff;')
-    %p.text-center= link_to(icon('envelope-o', 'you@youcube.jp'), 'mailto:you@youcube.jp', class: 'btn btn-primary')
-    %p 電子メールでお問い合わせいただければ、24時間以内に必ずお返事いたします。
-  .col-xs-12.col-sm-4
-    %p.text-center= icon('twitter', nil, class: 'fa-5x', style: 'color: #55acee;')
-    %p.text-center= link_to(icon('twitter', '@youcune'), 'https://twitter.com/youcune', class: 'btn btn-primary')
-    %p カジュアルな内容であれば Twitter で気軽に声をお掛けください。
+  %p#contact-directly お急ぎの方はお電話、または電子メール、 Twitter でもお受けしております。
+
+  .row
+    = partial 'partials/contact_form'
