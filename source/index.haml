@@ -1,9 +1,25 @@
 #index-page
   .row
-    .col-xs-12.col-sm-6.col-sm-push-6
+    .col-xs-12.col-sm-6.col-md-4.col-sm-push-6.col-md-push-8
       %p#logo= link_to(image_tag('icon750.png', alt: 'ユーキューブ', class: 'img-responsive'), '/works/')
-    .col-xs-12.col-sm-6.col-sm-pull-6
+    .col-xs-12.col-sm-6.col-md-8.col-sm-pull-6.col-md-pull-4
       %p.lead ユーキューブは、Webサイト（ホームページ）の制作、運用を通して利益向上のお手伝いをする、兵庫県三田市発のWebコンサルティングファームです。
+  #operations-wordpress-page
+    #essential.hero
+      .row
+        .col-md-6
+          .hero-text
+            %h2.lead-header WordPressおまかせ保守運用
+            %p 安定運用に必要と考えられることを代行し、利益向上のお手伝いまで実施します。
+            %p.text-center= link_to(icon('hand-o-right', '詳しく見る'), '/operations/wordpress/', class: 'btn btn-primary')
+  #daihyo-dial-page
+    .hero
+      .row
+        .col-md-6
+          .hero-text
+            %h2= image_tag 'logo-daihyo-dial.png', alt: 'ダイヒョウダイヤル', width: 198, height: 93, class: 'img-responsive'
+            %p 弊社ダイヒョウの仲西に電話相談できるサービスです。
+            %p.text-center= link_to(icon('hand-o-right', '詳しく見る'), '/daihyo-dial/', class: 'btn btn-primary')
   .services-lg.row.container-fluid.little-gutter
     .col-xs-12.col-sm-6.col-lg-3
       %section.service
@@ -23,12 +39,6 @@
         %h2 利益につながるよう改善したい
         %p なかなか効果が感じられなくお悩みの方、ご相談ください。
         %p.text-center= link_to(icon('envelope-o', '無料相談する'), '/contact/', class: 'btn btn-primary')
-    .col-xs-12.col-sm-6.col-lg-3
-      %section.service
-        .small すでに Web サイトをお持ちの方
-        %h2 管理をまるごと任せたい
-        %p サーバーやドメインなど、管理をまるごと引き受けます。
-        %p.text-center= link_to(icon('hand-o-right', '詳しく見る'), '/operations/static/', class: 'btn btn-primary')
   %p
     %span.label.label-default 最新のおしらせ
     = "#{announcements.last['date']}：#{announcements.last['text']}"

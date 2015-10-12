@@ -1,0 +1,39 @@
+---
+title: ダイヒョウダイヤル
+description: Web全般に関することなどご相談いただける、1回10,000円の電話相談サービスです。
+---
+#daihyo-dial-page
+  .hero
+    .row
+      .col-xs-6
+        %h1= image_tag('logo-daihyo-dial.png', alt: 'ダイヒョウダイヤル', width: 396, height: 186, class: 'img-responsive')
+  %h2.lead-header 弊社ダイヒョウの仲西に電話相談できるサービスです。
+  %p 仲西は下記のようなご相談に向いています。
+  %ul
+    %li インターネットを活用した利益向上施策のご相談
+    %li オフィスの IT 環境整備のご相談
+    %li Ruby, Ruby on Rails 学習のサポート
+    %li Web 制作会社から受け取った見積書の妥当性検証
+    %li Web 担当者を採用するにあたっての適正確認
+    %li 経営者と話してみたい
+  %h2 価格
+  .row
+    .col-sm-6
+      %table.table.table-bordered
+        %tbody
+          %tr
+            %th.valign-middle 基本料金（30分まで）
+            %td.text-right.pricing ¥10,000
+          %tr
+            %th.valign-middle 延長料金（5分ごと）
+            %td.text-right.pricing ¥1,500
+  %ul
+    %li 価格は税別です。
+    %li 前払いとなります。
+    %li 延長をご希望の場合、延長分は後払いとなります。
+    %li 延長の場合、5分未満の端数の時間は切り捨ててご請求となります。
+    %li いかなる場合も返金には応じかねます。
+    %li 電話代などの通信費はご負担ください。
+  .row
+    .col-xs-12.col-md-8.col-md-offset-2
+      = partial 'partials/inquiry_form'

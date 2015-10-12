@@ -94,6 +94,14 @@ $navbar-default-toggle-border-color:       transparent
 html
   overflow-y: scroll
 
+td, .panel, [class*='col-']
+  *:first-child
+    margin-top: 0
+
+td, .panel
+  *:last-child
+    margin-bottom: 0
+
 // -------------------------------------------------------------------
 // Type
 // -------------------------------------------------------------------
@@ -121,15 +129,12 @@ html
 // -------------------------------------------------------------------
 // Tables
 // -------------------------------------------------------------------
-td
-  *:first-child
-    margin-top: 0
-  
-  *:last-child
-    margin-bottom: 0
-
+td, th
   &.icon-cell
     text-align: center
+    vertical-align: middle !important
+
+  &.valign-middle
     vertical-align: middle !important
 
 // -------------------------------------------------------------------

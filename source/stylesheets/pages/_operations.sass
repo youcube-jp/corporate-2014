@@ -1,16 +1,5 @@
 #operations-wordpress-page
-  .appeal-area
-    @media (min-width: $screen-lg-min)
-      height: 400px
-    @media (min-width: $screen-md-min) and (max-width: $screen-md-max)
-      height: 329px
-    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max)
-      height: 263px
-
-    background: no-repeat center
-    background-size: cover
-    margin-bottom: $line-height-computed / 2
-
+  .hero
     &#essential
       background-image: image-url('appeal/security.jpg')
 
@@ -19,15 +8,3 @@
 
     &#operations
       background-image: image-url('appeal/operations.jpg')
-
-    .appeal-text
-      background-color: #000000
-      color: #ffffff
-      opacity: 0.6
-      padding: $line-height-computed $line-height-computed/2
-
-      *:first-child
-        margin-top: 0
-
-      *:last-child
-        margin-bottom: 0
